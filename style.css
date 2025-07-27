@@ -3,11 +3,15 @@
     --accent: #292929;
     --base-primary: #ffffff;
     --base-primary-inverted: #000000;
+    --base-primary-variant: #FFFFFF;
     --base-secondary: #A87FF3;
+    --base-secondary-variant: #000000;
+    --base-stats: #F6FFF6;
     
 
     /* Text */
     --text-accent: #292929;
+    --text-primary: #000000;
     --text-tertiary: #64C661;
     --textRed: #FF0000;
     --TextBlue: #65C8FF;
@@ -26,9 +30,12 @@
     --accent: #FFFFFF;
     --base-primary: #000000;
     --base-primary-inverted: #FFFFFF;
+    --base-primary-variant: #0B0B0B;
+    --base-secondary-variant: #737373;
 
     /* Text */
     --text-accent: #FFFFFF;
+    --text-primary: #FFFFFF;
 
     /* UI */
     --btn-primary: #;
@@ -258,3 +265,109 @@ a {
 }
 
 /* END OF HERO SECTION */
+
+.stats {
+    margin-top: 145px;
+}
+
+.stats-contents {
+    background: var(--base-stats);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 77px;
+    height: 372px;
+}
+
+.stats-contents h2 {
+    font-size: 8rem;
+    color: var(--text-tertiary);
+    text-align: center;
+}
+
+.stats-contents h3 {
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--text-tertiary);
+    margin-top: 21px;
+}
+/* END OF STATS SECTION */
+
+.portfolio {
+    margin-top: 200px;
+}
+
+.portfolio-contents h3 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--text-primary);
+}
+
+.project-cards {
+    margin-top: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 700px;
+}
+
+.p-card {
+    flex-basis: 359.5px;
+    height: 419px;
+    padding: 30px;
+    box-shadow: inset 0px 0px 2px var(--base-secondary-variant);
+    border-radius: 10px;
+    background: var(--base-primary-variant);
+}
+
+.p-card img {
+    width: 100%;
+    height: 200px;
+}
+
+.project-contents h4 {
+    color: var(--base-primary-inverted);
+    font-size: 1.75rem;
+    margin-top: 23px;
+}
+
+.project-tags {
+    margin-top: 21px;
+    display: flex;
+}
+
+.tag {
+    width: 84px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 4px;
+    font-size: 0.875rem;
+    margin-right: 5px;
+    color: #784DC7;
+    background: #E9DFFC;
+    box-shadow: inset 0px 0px 2px #BE9FF6;
+    border-radius: 50px;
+}
+
+.project-contents button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    margin-top: 23px;
+    padding: 24px 12px;
+    background: #292929;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-family: "Figtree", sans-serif;
+    font-weight: 700;
+}
+
+/* END OF PROJECT SECTION */
