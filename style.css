@@ -186,6 +186,10 @@ a {
     margin-top: 2.563rem;
 }
 
+.hero .left {
+    width: 660px;
+}
+
 .hero-heading {
     font-size: 12rem;
     letter-spacing: -3px;
@@ -231,12 +235,13 @@ a {
     align-items: center;
     width: 52px;
     height: 52px;
-    padding: 6px;
+    /* padding: 6px; */
     border: 1px solid var(--socials-bg);
     border-radius: 10px;
 }
 
 .social-icons {
+    display: block;
     width: 52px;
     height: 52px;
 }
@@ -565,12 +570,150 @@ body.darkmode .testimonial {
 }
 
 .desc-img {
-    width: 746px;
-    height: 530px;
+    width: 733px;
+    height: 100%;
 }
 
 .wave-icon {
     position: absolute;
     top: 0;
     right: 0;
+}
+/* END OF ABOUT ME SECTION */
+footer {
+    background: #292929;
+    margin-top: 335px;
+    position: relative;
+    padding-bottom: 47px;
+}
+
+.acknowledgment {
+    position: relative;
+    background: #A87FF3;
+    color: #FFFFFF;
+    height: 180px;
+    border-radius: 15px;
+    top: -90px;
+}
+
+.footer-bg-icon-bottomLeft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-user-drag: none;
+}
+.footer-bg-icon-topRight {
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-user-drag: none;
+}
+
+.acknowledgment-contents {
+    height: 180px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer-img {
+    margin-top: -215px;
+    -webkit-user-drag: none;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.footer-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-navLinks {
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-family: "Figtree", sans-serif;
+}
+/* END OF FOOTER SECTION */
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1528px) {
+    .container {
+        max-width: 1528x;
+    }
+
+    .wrapper {
+        max-width: 1440px;
+    }
+}
+
+@media screen and (max-width: 1528px) {
+    .container {
+        max-width: 1528x;
+    }
+
+    .wrapper {
+        max-width: 1328px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .container {
+        max-width: 1440x;
+    }
+
+    .wrapper {
+        max-width: 1240px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .container {
+        max-width: 1240x;
+    }
+
+    .wrapper {
+        max-width: 1024px;
+    }
+}
+
+/* TABLET VERSION */
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 1024x;
+    }
+
+    .wrapper {
+        max-width: 824px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 768x;
+    }
+
+    .wrapper {
+        max-width: 1440px;
+    }
+}
+
+/* MOBILE VERSION */
+@media screen and (max-width: 430px) {
+    .container {
+        max-width: 430x;
+    }
+
+    .wrapper {
+        max-width: 385px;
+    }
 }
