@@ -485,3 +485,92 @@ body.darkmode .testimonial {
     display: block;
     margin: 60px auto 0;
 }
+/* END OF TESTIMONIAL SECTION */
+
+.aboutMe-contents {
+    margin-top: 200px;
+}
+
+.aboutMe-contents .heading {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.heading h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    color: var(--text-primary);
+}
+
+.zigzag-icon path {
+    stroke: var(--accent);
+}
+
+.desc-heading {
+    color: var(--text-accent)
+}
+
+.description {
+    display: flex;
+}
+
+.desc-heading {
+    font-family: "Figtree", sans-serif;
+    font-size: 2rem;
+    letter-spacing: -1px;
+    color: var(--accent);
+}
+
+.linear-text-color {
+    background: #FA709A;
+    background: linear-gradient(to right, #FA709A 0%, #FEE140 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.passion-gradient-color {
+    background: #84FAB0;
+    background: linear-gradient(to right, #84FAB0 0%, #8FD3F4 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.name-gradient-color {
+    background: #E0C3FC;
+    background: linear-gradient(to right, #E0C3FC 0%, #8EC5FC 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.country-gradient-color {
+    background: #FFE76A;
+    background: linear-gradient(to right, #FFE76A 20%, #65C8FF 23%, #65C8FF 50%, #65C8FF 72%, #FF0000 72%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-skills {
+    margin: 76px 129.5px 66px 0px;
+}
+.about-passion {
+    margin: 176px 0px 175px 82px;
+}
+.about-author {
+    margin: 168px 129px 0px 0px;
+}
+
+.description .right {
+    position: relative;
+}
+
+.desc-img {
+    width: 746px;
+    height: 530px;
+}
+
+.wave-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
