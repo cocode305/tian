@@ -40,9 +40,7 @@
     --text-primary: #FFFFFF;
 
     /* UI */
-    --btn-primary: #;
     --btn-tertiary: #925FF0;
-
     --socials-bg: transparent;
 }
 
@@ -320,7 +318,7 @@ a {
     flex-wrap: wrap;
     gap: 30px;
     font-family: "Figtree", sans-serif;
-    font-weight: 700px;
+    font-weight: 700;
 }
 
 .p-card {

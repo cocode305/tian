@@ -9,13 +9,16 @@ const enableDarkmode = () => {
 
 const disableDarkmode = () => {
     body.classList.remove('darkmode');
-    localStorage.setItem('darkmode', 'null');
+    localStorage.removeItem('darkmode');
 }
 
 if(darkmode === "active") enableDarkmode();
 
-toggle.addEventListener("click", () => {
+if (toggle) {
+    toggle.addEventListener("click", () => {
     darkmode = localStorage.getItem('darkmode');
     darkmode !== "active" ? enableDarkmode() : disableDarkmode();
-})
+    });
+}
+
 
