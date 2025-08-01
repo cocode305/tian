@@ -63,6 +63,7 @@ body {
 .container {
     max-width: 1728px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .wrapper {
@@ -172,6 +173,13 @@ a {
     height: 40px;
     background: var(--btn-tertiary);
     color: var(--btn-secondary);
+}
+.mobile-contact-btn, .mobile-theme-toggle {
+    display: none;
+}
+
+.closeBtn {
+    display: none;
 }
 
 .mobile-nav {
@@ -697,23 +705,223 @@ footer {
     .wrapper {
         max-width: 824px;
     }
+}
 
-    .nav-content ul, .theme {
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .wrapper {
+        max-width: 720px;
+        padding: 0 20px;
+    }
+
+    header {
+        position: relative;
+    }
+
+    .nav-content {
+        padding: 20px 0;
+    }
+
+    .nav-content ul {
+        display: none;
+        flex-direction: column;
+        gap: 70px;
+        position: absolute;
+        top: 85px;
+        right: 0;
+        left: 0;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background: #292929;
+        padding: 100px 50px 50px;
+    }
+
+    .mobile-contact-btn {
+        display: flex;
+        width: 100%;
+        background: #A87FF3
+    }
+
+    .mobile-theme-toggle {
+        display: block;
+    }
+    .toggle-label {
+        background: #010101;
+    }
+
+    .nav-content ul a {
+        color: #ffffff;
+    }
+
+    .theme {
         display: none;
     }
 
     .mobile-nav {
         display: block;
+        background: transparent;
     }
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        max-width: 768x;
+    .closeBtn {
+        display: block;
+        width: 30px;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        z-index: 100;
+        background: transparent;
+    }
+    .close-icon {
+        fill: rgb(133, 127, 127);
     }
 
-    .wrapper {
-        max-width: 1440px;
+    .hero .left {
+        width: 100%;
+    }
+
+    .hero-heading {
+        font-size: 10rem;
+        text-align: center;
+    }
+
+    .designer-name {
+        width: 100%;
+    }
+
+    .author-name {
+        width: 100%;
+    }
+
+    .hero-content .middle, .hero-content .right {
+        display: none;
+    }
+
+    .stats-contents {
+        flex-direction: column;
+    }
+
+    .stats-contents h2 {
+        font-size: 6rem;
+    }
+
+    .stats-contents h3 {
+        font-size: 2rem;
+        margin-top: 21px;
+    }
+
+    .dawn-icon {
+        display: none;
+    }
+    /* END OF STATS SECTION */
+
+    .p-card {
+        flex-basis: 100%;
+        height: auto;
+    }
+
+    .p-card .portfolio-img {
+        height: 300px;
+    }
+    /* END OF PROJECT SECTION */
+
+    .skill-card {
+        width: 100%px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skillCard-content {
+        width: 100%;
+    }
+
+    .testimonial {
+        padding: 0 22px;
+        margin-top: 140px;
+    }
+
+    .testimonial-content {
+        width: 100%;
+        padding: 85px 0px;
+        margin: 0;
+    }
+
+    .testimonial-content h5 {
+        font-size: 1.5rem;
+    }
+
+    .testimonial-content h4 {
+        font-size: 1.5rem;
+    }
+    /* END OF TESTIMONIAL SECTION */
+
+    .description {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .reverse-desc {
+        flex-flow: column-reverse;
+    }
+
+    .zigzag-icon {
+        display: none;
+    }
+
+    .desc-heading {
+        font-size: 1.375rem;
+        margin: 50px 0 0;
+    }
+
+    .desc-img {
+        width: 100%;
+    }
+    /* END OF DESCRIPTION SECTION */
+
+    footer {
+        margin-top: 150px;
+    }
+
+    .acknowledgment {
+        height: 112px;
+        top: -50px;
+    }
+
+    .footer-bg-icon-bottomLeft {
+        width: 60px;
+    }
+    .footer-bg-icon-topRight {
+        width: 60px;
+    }
+
+    .acknowledgment-contents {
+        height: 112px;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .footer-img {
+        width: 135px;
+        height: 190px;
+        margin-top: -77px;
+    }
+
+    .acknowledgment-text {
+        font-size: 0.75rem;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+    }
+
+    .footer-line {
+        margin-top: 34px;
     }
 }
 
@@ -769,15 +977,9 @@ footer {
     .p-card {
         flex-basis: 100%;
     }
-
-    .skill-card {
-        width: 386px;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .skillCard-content {
-        width: 296px;
+    
+    .p-card .portfolio-img {
+        height: 200px;
     }
 
     .testimonial {
@@ -850,12 +1052,16 @@ footer {
         margin-top: -77px;
     }
 
-    .acknowledgment-text {
-        font-size: 0.75rem;
+    .acknowledgement .acknowledgment-text {
+        font-size: 0.6rem;
     }
 
     .footer-nav {
         flex-direction: column;
+    }
+
+    .footer-navLinks {
+        font-size: 0.8rem;
     }
 
     .footer-line {

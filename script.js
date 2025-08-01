@@ -1,6 +1,9 @@
 let darkmode = localStorage.getItem('darkmode');
 const toggle = document.getElementById('toggle');
 const body = document.body;
+const menuList = document.getElementById('menuList');
+const menuBtn = document.querySelector('.mobile-nav');
+const closeBtn = document.querySelector('.closeBtn')
 
 const enableDarkmode = () => {
     body.classList.add('darkmode');
@@ -21,4 +24,10 @@ if (toggle) {
     });
 }
 
+menuBtn.addEventListener('click', () => {
+    menuList.style.display = "flex";
+});
 
+closeBtn.addEventListener('click', () => {
+    menuList.style.display = "none";
+});
