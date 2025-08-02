@@ -245,7 +245,6 @@ a {
     align-items: center;
     width: 52px;
     height: 52px;
-    /* padding: 6px; */
     border: 1px solid var(--socials-bg);
     border-radius: 10px;
 }
@@ -540,27 +539,27 @@ body.darkmode .testimonial {
 .linear-text-color {
     background: #FA709A;
     background: linear-gradient(to right, #FA709A 0%, #FEE140 100%);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .passion-gradient-color {
     background: #84FAB0;
     background: linear-gradient(to right, #84FAB0 0%, #8FD3F4 100%);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .name-gradient-color {
     background: #E0C3FC;
     background: linear-gradient(to right, #E0C3FC 0%, #8EC5FC 100%);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
 }
 .country-gradient-color {
     background: #FFE76A;
     background: linear-gradient(to right, #FFE76A 20%, #65C8FF 23%, #65C8FF 50%, #65C8FF 72%, #FF0000 72%);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -779,6 +778,10 @@ footer {
         fill: rgb(133, 127, 127);
     }
 
+    .hero {
+        margin-top: 20px;
+    }
+
     .hero .left {
         width: 100%;
     }
@@ -786,15 +789,17 @@ footer {
     .hero-heading {
         font-size: 9rem;
         text-align: center;
+        margin-top: 0;
     }
 
     .designer-name {
         width: 100%;
         margin: 0 auto;
+        text-align: center;
     }
 
     .author-name {
-        width: 100%;
+        width: 80%;
     }
 
     .social-handles {
