@@ -784,16 +784,31 @@ footer {
     }
 
     .hero-heading {
-        font-size: 10rem;
+        font-size: 9rem;
         text-align: center;
     }
 
     .designer-name {
         width: 100%;
+        margin: 0 auto;
     }
 
     .author-name {
         width: 100%;
+    }
+
+    .social-handles {
+        margin-top: 50px;
+    }
+
+    .social-icons {
+        width: 35px;
+        height: 37px;
+    }
+
+    .hero-cta {
+        font-size: 0.875rem;
+        margin-top: 30px;
     }
 
     .hero-content .middle, .hero-content .right {
